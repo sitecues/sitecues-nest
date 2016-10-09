@@ -1,0 +1,59 @@
+{
+  "name": "sitecues-nest",
+  "version": "0.0.0",
+  "description": "Serve the builds of a project.",
+  "homepage": "https://github.com/sitecues/sitecues-nest",
+  "main": "index.js",
+  "author": {
+    "name": "Seth Holladay",
+    "url": "http://seth-holladay.com",
+    "email": "me@seth-holladay.com"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sitecues/sitecues-nest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sitecues/sitecues-nest/issues",
+    "email": "me@seth-holladay.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "error-subclass": "^2.0.4",
+    "find-up": "^2.0.0",
+    "handle-quit": "^0.1.0",
+    "hapi": "^15.0.3",
+    "inert": "^4.0.2",
+    "is-root": "^1.0.0",
+    "meow": "^3.7.0",
+    "opn": "^4.0.2",
+    "root-check": "^1.0.0",
+    "throw-rejects": "^0.1.3"
+  },
+  "devDependencies": {
+    "eslint-config-tidy": "^0.3.0",
+    "xo": "^0.16.0"
+  },
+  "keywords": [
+    "dev",
+    "devel",
+    "development",
+    "test",
+    "site",
+    "testsite",
+    "server"
+  ],
+  "xo": {
+    "extend": "tidy"
+  }
+}
