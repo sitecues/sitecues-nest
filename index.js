@@ -7,7 +7,7 @@ const { Server } = require('hapi');
 const inert = require('inert');
 /* eslint-disable global-require */
 const routes = [
-    require('./route/build')
+    require('./lib/route/build')
 ];
 /* eslint-enable global-require */
 
@@ -21,8 +21,8 @@ class Nest extends Server {
                 tls          : {
                     // Async configuration for constructors is a pain.
                     /* eslint-disable no-sync */
-                    key  : fs.readFileSync(path.join(__dirname, 'ssl/key/localhost.key')),
-                    cert : fs.readFileSync(path.join(__dirname, 'ssl/cert/localhost-chain.cert'))
+                    key  : fs.readFileSync(path.join(__dirname, 'lib/key/localhost.key')),
+                    cert : fs.readFileSync(path.join(__dirname, 'lib/cert/localhost-chain.cert'))
                     /* eslint-enable no-sync */
                 }
             },

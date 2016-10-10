@@ -24,8 +24,16 @@
     "node": ">=6"
   },
   "license": "SEE LICENSE IN LICENSE",
+  "bin": {
+    "nest": "bin/nest.js"
+  },
+  "directories": {
+    "bin": "./bin"
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "lib",
+    "bin"
   ],
   "dependencies": {
     "chalk": "^1.1.3",
