@@ -34,9 +34,9 @@
     "handle-quit": "^0.1.0",
     "hapi": "^15.0.3",
     "inert": "^4.0.2",
-    "is-root": "^1.0.0",
     "meow": "^3.7.0",
     "opn": "^4.0.2",
+    "port-type": "^0.2.0",
     "root-check": "^1.0.0",
     "throw-rejects": "^0.1.3"
   },

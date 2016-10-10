@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const isRoot = require('is-root');
+const portType = require('port-type');
 const { Server } = require('hapi');
 const inert = require('inert');
 /* eslint-disable global-require */
@@ -13,7 +13,7 @@ const routes = [
 
 class Nest extends Server {
     constructor(option) {
-        const privileged = isRoot();
+        const privileged = portType.haveRights(80);
         const config = Object.assign(
             {
                 insecurePort : privileged ? 80 : 3000,
