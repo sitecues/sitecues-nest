@@ -7,6 +7,8 @@ const { Server } = require('hapi');
 const inert = require('inert');
 /* eslint-disable global-require */
 const routes = [
+    require('./lib/route/legacy'),
+    require('./lib/route/default'),
     require('./lib/route/build')
 ];
 /* eslint-enable global-require */
