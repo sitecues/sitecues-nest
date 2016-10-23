@@ -18,7 +18,7 @@ class Nest extends Server {
         const privileged = portType.haveRights(80);
         const config = Object.assign(
             {
-                insecurePort : privileged ? 80 : 3000,
+                insecurePort : privileged ? 80 : 3001,
                 port         : privileged ? 443 : 3000,
                 tls          : {
                     // Async configuration for constructors is a pain.
