@@ -10,8 +10,18 @@
 
 ## Install
 
+As a dependency:
+
 ```sh
-npm install sitecues/sitecues-nest --global
+npm install sitecues/sitecues-nest --save
+```
+
+As a project to work on:
+
+```sh
+git clone git@github.com:sitecues/sitecues-nest.git &&
+cd sitecues-nest &&
+npm link
 ```
 
 ## Usage
